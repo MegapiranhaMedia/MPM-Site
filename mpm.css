@@ -171,6 +171,7 @@ nav {
     text-align: right;
     top: 0px;
     left: 0px;
+    border-bottom: 3px white solid;
 }
 
 .title {
@@ -209,10 +210,16 @@ nav a:nth-of-type(n+1):hover {
     margin-top: 100px;
 }
 
-.page1,
-.page2,
+.page1 h1 {
+    padding: 110px 30px;
+}
+
+.page2 h1 {
+    padding: 110px 30px;
+}
+
 .page3 h1 {
-    padding: 50px 30px;
+    padding: 110px 30px;
 }
 
 .page1 {
