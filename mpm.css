@@ -208,38 +208,53 @@ nav a:nth-of-type(n+1):hover {
     width: 100%;
     height: 900px;
     margin-top: 100px;
+    top: 0px;
+    left: 0px;
 }
 
 .page1 h1 {
-    padding: 110px 30px;
+    padding: 110px 30px 30px 30px;
 }
 
 .page2 h1 {
-    padding: 110px 30px;
+    padding: 110px 30px 30px 30px;
+    display: inline-block;
 }
 
 .page3 h1 {
-    padding: 110px 30px;
+    padding: 110px 30px 30px 30px;
 }
 
 .page1 {
     width: 100%;
     height: 900px;
     background-color: #27c6b6;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .page2 {
     width: 100%;
-    height: 900px;
+    height: 1200px;
     background-color: white;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .page3 {
     width: 100%;
     height: 900px;
     background-color: #3f3f3f;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
 }
-
+/*
 .portWrapper {
     display: inline-block;
     width: 100%;
@@ -258,4 +273,82 @@ nav a:nth-of-type(n+1):hover {
 
 .portWrapper1 div:hover {
     border-radius: 0px;
+} */
+
+.upperlip {
+    width: 70%;
+    float: right;
+    height: 400px;
+    background-color: #f38630;
+    border-radius: 400px 0px 0px 0px;
+    margin-top: 0px;
+}
+
+.lowerlip {
+    width: 90%;
+    height: 400px;
+    float: right;
+    background-color: #f38630;
+    border-radius: 0px 0px 0px 400px;
+}
+
+.upperteeth {
+    height: 202px;
+    width: 800px;
+    display: inline-block;
+    margin-left: 375px;
+}
+
+.lowerteeth {
+    height: 202px;
+    width: 850px;
+    margin-left: 200px;
+}
+
+.greensquare {
+    height: 202px;
+    width: 202px;
+    background-image: url(GSC%20Tooth.png);
+    margin: 0px 30px 30px 30px;
+    display: inline-block;
+}
+
+.nap {
+    height: 202px;
+    width: 202px;
+    background-image: url(NAP%20Tooth.png);
+    margin: 0px 30px 30px 30px;
+    display: inline-block;
+}
+
+.stardeli {
+    height: 202px;
+    width: 202px;
+    background-image: url(Star%20Tooth.png);
+    margin: 0px 30px 30px 30px;
+    display: inline-block;
+}
+
+.greystones {
+    height: 202px;
+    width: 202px;
+    background-image: url(GI%20Tooth.png);
+    margin: 0px 30px 30px 75px;
+    display: inline-block;
+}
+
+.voodoo {
+    height: 202px;
+    width: 202px;
+    background-image: url(VM%20Tooth.png);
+    margin: 0px 30px 30px 30px;
+    display: inline-block;
+}
+
+.yoga {
+    height: 202px;
+    width: 202px;
+    background-image: url(Yoga%20Tooth.png);
+    margin: 0px 30px 30px 30px;
+    display: inline-block;
 }
