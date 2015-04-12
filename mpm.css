@@ -206,24 +206,25 @@ nav a:nth-of-type(n+1):hover {
 
 .home {
     width: 100%;
-    height: 900px;
+    height: 200px;
     margin-top: 100px;
     top: 0px;
     left: 0px;
 }
 
 .page1 h1 {
-    padding: 110px 30px 30px 30px;
+    padding: 110px 30px 10px 30px;
 }
 
 .page2 h1 {
-    padding: 110px 30px 30px 30px;
+    padding: 110px 30px 10px 30px;
     display: inline-block;
 }
 
 .page3 h1 {
-    padding: 110px 30px 30px 30px;
+    padding: 110px 30px 10px 30px;
 }
+/*Begin Services Page*/
 
 .page1 {
     width: 100%;
@@ -234,17 +235,131 @@ nav a:nth-of-type(n+1):hover {
     margin: 0px;
     padding: 0px;
 }
+/*Holds three services divs*/
+
+.servWrapper div {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 0px 40px;
+}
+/*Text under each service*/
+
+.webText {
+    color: #27c6b6;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.socialText {
+    color: #27c6b6;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.contentText {
+    color: #27c6b6;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+/*Hover on service to show text below icon*/
+
+.webDesign:hover ~.webText {
+    height: 300px;
+    width: 300px;
+    color: white;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    margin: 0px 40px;
+}
+
+.socialMedia:hover ~.socialText {
+    height: 300px;
+    width: 300px;
+    color: white;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    margin: 0px 40px;
+}
+
+.content:hover ~.contentText {
+    height: 300px;
+    width: 300px;
+    color: white;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    margin: 0px 40px;
+}
+/*Divs for three services,
+starting background*/
+
+.webDesign {
+    background-image: url(MPM%20Web%20Design%20Icon.png);
+}
+
+.socialMedia {
+    background-image: url(MPM%20Social%20Media%20Icon.png);
+}
+
+.content {
+    background-image: url(MPM%20Content%20Icon.png);
+}
+/*Hover on service to change background and show title*/
+
+.webDesign:hover {
+    background-color: #f38630;
+    height: 300px;
+    weight: 300px;
+    border-radius: 175px;
+    background-image: none;
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+.socialMedia:hover {
+    background-color: #f38630;
+    height: 300px;
+    weight: 300px;
+    border-radius: 175px;
+    background-image: none;
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+.content:hover {
+    background-color: #f38630;
+    height: 300px;
+    weight: 300px;
+    border-radius: 175px;
+    background-image: none;
+    display: inline-block;
+    margin: 0px 40px;
+}
+/*Title of service hidden until hovered on*/
+}
+/*When service is hovered on,
+title appears*/
+}
+/*Begin Portfolio Page*/
 
 .page2 {
     width: 100%;
-    height: 1200px;
+    height: 1000px;
     background-color: white;
     top: 0px;
     left: 0px;
     margin: 0px;
     padding: 0px;
 }
-
 .page3 {
     width: 100%;
     height: 900px;
@@ -254,39 +369,128 @@ nav a:nth-of-type(n+1):hover {
     margin: 0px;
     padding: 0px;
 }
-/*
-.portWrapper {
+.page2 h2 {
+    font-family: 'TrashHand';
+    font-size: 2em;
     display: inline-block;
-    width: 100%;
-    height: 330px;
 }
-
 .portWrapper1 div {
     display: inline-block;
     width: 300px;
     height: 300px;
-    background-color: #3f3f3f;
+    border-radius: 175px;
+    border: 10px solid #3f3f3f;
+    margin: 30px 50px;
+    text-align: center;
+}
+.portWrapper1 div:first-of-type {
+    background-image: url(NAP%20Circle.png);
+}
+.portWrapper1 div:nth-of-type(2) {
+    background-image: url(GSC%20Circle.png);
+}
+.portWrapper1 div:nth-of-type(3) {
+    background-image: url(Star%20Circle.png);
+}
+.portWrapper1 p {
+    font-family: 'TrashHand';
+    display: inline-block;
+    margin: 100px 50px;
+    visibility: hidden;
+    font-size: 2em;
+}
+.portWrapper1 div:hover {
+    background-image: none;
+    background-color: #f38630;
+    Border: 10px solid #27c6b6;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
     border-radius: 175px;
     border: 10px solid #27c6b6;
-    margin: 30px 15px;
+    margin: 30px 50px;
+    text-align: center;
+    cursor: pointer;
 }
-
-.portWrapper1 div:hover {
-    border-radius: 0px;
-} */
+.portWrapper1 div:hover >p {
+    visibility: visible;
+    color: white;
+    font-size: 2em;
+    font-family: 'TrashHand';
+    cursor: pointer;
+    display: inline-block;
+    margin: 100px 50px;
+    cursor: pointer;
+}
+.portWrapper2 div {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 175px;
+    border: 10px solid #3f3f3f;
+    margin: 30px 50px;
+    text-align: center;
+}
+.portWrapper2 div:first-of-type {
+    background-image: url(GI%20Circle.png);
+}
+.portWrapper2 div:nth-of-type(2) {
+    background-image: url(VM%20Circle.png);
+}
+.portWrapper2 div:nth-of-type(3) {
+    background-image: url(Yoga%20Circle.png);
+}
+.portWrapper2 p {
+    font-family: 'TrashHand';
+    display: inline-block;
+    margin: 100px 50px;
+    visibility: hidden;
+    font-size: 2em;
+}
+.portWrapper2 div:hover {
+    background-image: none;
+    background-color: #f38630;
+    Border: 10px solid #27c6b6;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 175px;
+    border: 10px solid #27c6b6;
+    margin: 30px 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.portWrapper2 div:hover >p {
+    visibility: visible;
+    color: white;
+    font-size: 2em;
+    font-family: 'TrashHand';
+    cursor: pointer;
+    display: inline-block;
+    margin: 100px 50px;
+}
+/*
+.page2 h2 {
+    font-family: 'TrashHand';
+    font-size: 2em;
+    text-overflow: inherit;
+    width: 200px;
+    margin: -100px 0px 0px 50px
+}
 
 .upperlip {
     width: 70%;
     float: right;
-    height: 400px;
+    height: 300px;
     background-color: #f38630;
     border-radius: 400px 0px 0px 0px;
-    margin-top: 0px;
+    margin-top: -20px;
+    display: inline-block;
 }
 
 .lowerlip {
     width: 90%;
-    height: 400px;
+    height: 300px;
     float: right;
     background-color: #f38630;
     border-radius: 0px 0px 0px 400px;
@@ -301,15 +505,16 @@ nav a:nth-of-type(n+1):hover {
 
 .lowerteeth {
     height: 202px;
-    width: 850px;
-    margin-left: 200px;
+    width: 1115px;
+    margin-left: 160px;
+    margin-top: -150px;
 }
 
 .greensquare {
     height: 202px;
     width: 202px;
     background-image: url(GSC%20Tooth.png);
-    margin: 0px 30px 30px 30px;
+    margin: 0px 30px 0px 30px;
     display: inline-block;
 }
 
@@ -317,7 +522,7 @@ nav a:nth-of-type(n+1):hover {
     height: 202px;
     width: 202px;
     background-image: url(NAP%20Tooth.png);
-    margin: 0px 30px 30px 30px;
+    margin: 0px 30px 0px 30px;
     display: inline-block;
 }
 
@@ -325,7 +530,7 @@ nav a:nth-of-type(n+1):hover {
     height: 202px;
     width: 202px;
     background-image: url(Star%20Tooth.png);
-    margin: 0px 30px 30px 30px;
+    margin: 0px 30px 0px 30px;
     display: inline-block;
 }
 
@@ -333,7 +538,7 @@ nav a:nth-of-type(n+1):hover {
     height: 202px;
     width: 202px;
     background-image: url(GI%20Tooth.png);
-    margin: 0px 30px 30px 75px;
+    margin: 0px 30px 0px 75px;
     display: inline-block;
 }
 
@@ -341,7 +546,7 @@ nav a:nth-of-type(n+1):hover {
     height: 202px;
     width: 202px;
     background-image: url(VM%20Tooth.png);
-    margin: 0px 30px 30px 30px;
+    margin: 0px 30px 0px 30px;
     display: inline-block;
 }
 
@@ -349,6 +554,82 @@ nav a:nth-of-type(n+1):hover {
     height: 202px;
     width: 202px;
     background-image: url(Yoga%20Tooth.png);
-    margin: 0px 30px 30px 30px;
+    margin: 0px 30px 0px 30px;
     display: inline-block;
 }
+
+.behance {
+    height: 202px;
+    width: 202px;
+    background-image: url(Behance%20Tooth.png);
+    margin: 0px 30px 0px 30px;
+    display: inline-block;
+}
+*/
+/*alternate portfolio fish
+
+.fishbody {
+    width: 600px;
+    height: 300px;
+    background-color: #f38630;
+    border-radius: 300px 300px 0px 0px;
+    margin-left: 670px;
+    display: inline-block;
+}
+
+.fishjaw {
+    width: 1250px;
+    height: 450px;
+    background-color: #f38630;
+    border-radius: 0px 0px 450px 450px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.eye {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 20px solid #27c6b6;
+    border-radius: 175px;
+    margin-left: 550px;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+}
+*/
+/* Responsive CSS */
+
+@media all and (max-width: 1250px) and (min-width: 300px) {
+    nav {
+        width: 100%;
+    }
+    @media all and (max-width: 500px) and (min-width: 300px) {
+        h1 {
+            display: none;
+        }
+        
+        .logo {
+            background-image: url(MPMLogo45px.png);
+            height: 50px;
+            width: 50px;
+        }
+        
+        nav a {
+            padding: 0px 2px;
+            font-size: 15px;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+        }
+        
+        nav {
+            height: 50px;
+            width: 100%;
+        }
+        
+        .page1,
+        .page2,
+        .page3 {
+            width: 100%;
+        }
