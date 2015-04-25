@@ -138,6 +138,8 @@ table {
     font-family: 'TrashHand';
     src: url('TrashHand.eot');
     src: url('TrashHand.eot?iefix') format('eot'), url('TrashHand.woff') format('woff'), url('TrashHand.ttf') format('truetype'), url('TrashHand.svg#webfont') format('svg');
+    font-family: 'PermanentMarker';
+    src: url('PermanentMarker.ttf') format('truetype');
 }
 
 body {
@@ -206,10 +208,20 @@ nav a:nth-of-type(n+1):hover {
 
 .home {
     width: 100%;
-    height: 200px;
+    height: 400px;
     margin-top: 100px;
     top: 0px;
     left: 0px;
+    background-image: url(LaptopMPMOrange.png);
+    background-repeat: no-repeat;
+}
+
+.home p {
+    font-family: 'PermanentMarker';
+    font-size: 5em;
+    color: white;
+    padding: 40px 0px 0px 40px;
+    display: inline-block;
 }
 
 .page1 h1 {
@@ -228,7 +240,7 @@ nav a:nth-of-type(n+1):hover {
 
 .page1 {
     width: 100%;
-    height: 900px;
+    height: 600px;
     background-color: #27c6b6;
     top: 0px;
     left: 0px;
@@ -244,7 +256,7 @@ nav a:nth-of-type(n+1):hover {
     margin: 0px 40px;
 }
 /*Text under each service*/
-
+/*
 .webText {
     color: #27c6b6;
     font-family: "lato", sans-serif;
@@ -252,6 +264,7 @@ nav a:nth-of-type(n+1):hover {
     display: inline-block;
     vertical-align: top;
     text-align: center;
+    font-size: 1em;
 }
 
 .socialText {
@@ -261,6 +274,7 @@ nav a:nth-of-type(n+1):hover {
     display: inline-block;
     vertical-align: top;
     text-align: center;
+    font-size: 1em;
 }
 
 .contentText {
@@ -270,12 +284,13 @@ nav a:nth-of-type(n+1):hover {
     display: inline-block;
     vertical-align: top;
     text-align: center;
-}
+    font-size: 1em;
+} */
 /*Hover on service to show text below icon*/
-
+/*
 .webDesign:hover ~.webText {
-    height: 300px;
     width: 300px;
+    height: 200px;
     color: white;
     font-family: "lato", sans-serif;
     font-weight: 400;
@@ -283,8 +298,8 @@ nav a:nth-of-type(n+1):hover {
 }
 
 .socialMedia:hover ~.socialText {
-    height: 300px;
     width: 300px;
+    height: 200px;
     color: white;
     font-family: "lato", sans-serif;
     font-weight: 400;
@@ -292,13 +307,13 @@ nav a:nth-of-type(n+1):hover {
 }
 
 .content:hover ~.contentText {
-    height: 300px;
     width: 300px;
+    height: 200px;
     color: white;
     font-family: "lato", sans-serif;
     font-weight: 400;
     margin: 0px 40px;
-}
+}*/
 /*Divs for three services,
 starting background*/
 
@@ -317,37 +332,63 @@ starting background*/
 
 .webDesign:hover {
     background-color: #f38630;
-    height: 300px;
-    weight: 300px;
-    border-radius: 175px;
+    height: 290px;
+    weight: 290px;
+    border-radius: 300px;
+    border: 10px solid #3f3f3f;
     background-image: none;
     display: inline-block;
-    margin: 0px 40px;
 }
 
 .socialMedia:hover {
     background-color: #f38630;
-    height: 300px;
-    weight: 300px;
-    border-radius: 175px;
+    height: 290px;
+    weight: 290px;
+    border-radius: 300px;
+    border: 10px solid #3f3f3f;
     background-image: none;
     display: inline-block;
-    margin: 0px 40px;
 }
 
 .content:hover {
     background-color: #f38630;
-    height: 300px;
-    weight: 300px;
-    border-radius: 175px;
+    height: 290px;
+    weight: 290px;
+    border-radius: 300px;
+    border: 10px solid #3f3f3f;
     background-image: none;
     display: inline-block;
-    margin: 0px 40px;
 }
 /*Title of service hidden until hovered on*/
+
+.servWrapper p {
+    visibility: hidden;
+    height: 300px;
+    width: 300px;
+    color: white;
+    font-size: 2em;
+    font-family: 'TrashHand';
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 90px 0px;
 }
 /*When service is hovered on,
 title appears*/
+
+.servWrapper div:hover >p {
+    height: 300px;
+    width: 300px;
+    visibility: visible;
+    color: white;
+    font-size: 2em;
+    font-family: 'TrashHand';
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 90px 0px;
 }
 /*Begin Portfolio Page*/
 
@@ -360,6 +401,7 @@ title appears*/
     margin: 0px;
     padding: 0px;
 }
+
 .page3 {
     width: 100%;
     height: 900px;
@@ -369,11 +411,13 @@ title appears*/
     margin: 0px;
     padding: 0px;
 }
+
 .page2 h2 {
     font-family: 'TrashHand';
     font-size: 2em;
     display: inline-block;
 }
+
 .portWrapper1 div {
     display: inline-block;
     width: 300px;
@@ -383,15 +427,19 @@ title appears*/
     margin: 30px 50px;
     text-align: center;
 }
+
 .portWrapper1 div:first-of-type {
     background-image: url(NAP%20Circle.png);
 }
+
 .portWrapper1 div:nth-of-type(2) {
     background-image: url(GSC%20Circle.png);
 }
+
 .portWrapper1 div:nth-of-type(3) {
     background-image: url(Star%20Circle.png);
 }
+
 .portWrapper1 p {
     font-family: 'TrashHand';
     display: inline-block;
@@ -399,6 +447,7 @@ title appears*/
     visibility: hidden;
     font-size: 2em;
 }
+
 .portWrapper1 div:hover {
     background-image: none;
     background-color: #f38630;
@@ -412,6 +461,7 @@ title appears*/
     text-align: center;
     cursor: pointer;
 }
+
 .portWrapper1 div:hover >p {
     visibility: visible;
     color: white;
@@ -420,8 +470,8 @@ title appears*/
     cursor: pointer;
     display: inline-block;
     margin: 100px 50px;
-    cursor: pointer;
 }
+
 .portWrapper2 div {
     display: inline-block;
     width: 300px;
@@ -431,15 +481,19 @@ title appears*/
     margin: 30px 50px;
     text-align: center;
 }
+
 .portWrapper2 div:first-of-type {
     background-image: url(GI%20Circle.png);
 }
+
 .portWrapper2 div:nth-of-type(2) {
     background-image: url(VM%20Circle.png);
 }
+
 .portWrapper2 div:nth-of-type(3) {
     background-image: url(Yoga%20Circle.png);
 }
+
 .portWrapper2 p {
     font-family: 'TrashHand';
     display: inline-block;
@@ -447,6 +501,7 @@ title appears*/
     visibility: hidden;
     font-size: 2em;
 }
+
 .portWrapper2 div:hover {
     background-image: none;
     background-color: #f38630;
@@ -460,6 +515,7 @@ title appears*/
     text-align: center;
     cursor: pointer;
 }
+
 .portWrapper2 div:hover >p {
     visibility: visible;
     color: white;
@@ -608,13 +664,11 @@ title appears*/
         h1 {
             display: none;
         }
-        
         .logo {
             background-image: url(MPMLogo45px.png);
             height: 50px;
             width: 50px;
         }
-        
         nav a {
             padding: 0px 2px;
             font-size: 15px;
@@ -622,12 +676,10 @@ title appears*/
             width: 50px;
             line-height: 50px;
         }
-        
         nav {
             height: 50px;
             width: 100%;
         }
-        
         .page1,
         .page2,
         .page3 {
