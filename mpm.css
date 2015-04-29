@@ -206,23 +206,26 @@ nav a:nth-of-type(n+1):hover {
     color: #3f3f3f;
 }
 
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
 .home {
     width: 100%;
     height: 400px;
     margin-top: 100px;
     top: 0px;
     left: 0px;
-    background-image: url(LaptopMPMOrange.png);
-    background-repeat: no-repeat;
 }
-
+/*original before parallax
 .home p {
     font-family: 'PermanentMarker';
     font-size: 5em;
     color: white;
     padding: 40px 0px 0px 40px;
     display: inline-block;
-}
+}*/
 
 .page1 h1 {
     padding: 110px 30px 10px 30px;
@@ -255,7 +258,7 @@ nav a:nth-of-type(n+1):hover {
     display: inline-block;
     margin: 0px 40px;
 }
-/*Text under each service*/
+/*Text under each service* alternate version/
 /*
 .webText {
     color: #27c6b6;
@@ -334,7 +337,7 @@ starting background*/
     background-color: #f38630;
     height: 290px;
     weight: 290px;
-    border-radius: 300px;
+    border-radius: 50%;
     border: 10px solid #3f3f3f;
     background-image: none;
     display: inline-block;
@@ -344,7 +347,7 @@ starting background*/
     background-color: #f38630;
     height: 290px;
     weight: 290px;
-    border-radius: 300px;
+    border-radius: 50%;
     border: 10px solid #3f3f3f;
     background-image: none;
     display: inline-block;
@@ -354,7 +357,7 @@ starting background*/
     background-color: #f38630;
     height: 290px;
     weight: 290px;
-    border-radius: 300px;
+    border-radius: 50%;
     border: 10px solid #3f3f3f;
     background-image: none;
     display: inline-block;
@@ -384,7 +387,6 @@ title appears*/
     color: white;
     font-size: 2em;
     font-family: 'TrashHand';
-    cursor: pointer;
     display: inline-block;
     text-align: center;
     vertical-align: top;
@@ -525,7 +527,7 @@ title appears*/
     display: inline-block;
     margin: 100px 50px;
 }
-/*
+/* alternate version-portfolio
 .page2 h2 {
     font-family: 'TrashHand';
     font-size: 2em;
@@ -654,6 +656,36 @@ title appears*/
     z-index: 3;
 }
 */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+}
+
+footer div {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.copyright {
+    font-family: "TrashHand";
+    display: inline-block;
+    margin: 0px 100px;
+}
+
+.top a {
+    font-family: "TrashHand";
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin: 0px 100px;
+}
+
+.spb img {
+    margin: 0px 100px;
+}
 /* Responsive CSS */
 
 @media all and (max-width: 1250px) and (min-width: 300px) {
