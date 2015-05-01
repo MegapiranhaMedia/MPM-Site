@@ -164,6 +164,39 @@ h1 {
     display: inline-block;
     float: left;
 }
+/* Flex Nav */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-center;
+    height: 100px;
+    position: fixed;
+    background-color: #3f3f3f;
+}
+
+nav a:first-of-type {
+    order: 1;
+    margin: auto;
+}
+
+nav a:nth-of-type(2) {
+    order: 2;
+    margin: auto;
+}
+
+nav a:last-of-type {
+    order: 3;
+    margin: auto;
+}
+
+nav a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    font-family: 'TrashHand';
+}
+/* Original nav
 
 nav {
     width: 100%;
@@ -174,7 +207,7 @@ nav {
     top: 0px;
     left: 0px;
     border-bottom: 3px white solid;
-}
+} */
 
 .title {
     display: inline-block;
@@ -187,6 +220,7 @@ nav {
     padding: none;
     color: white;
 }
+/* Original nav a */
 
 nav a {
     display: inline-block;
@@ -204,28 +238,13 @@ nav a {
 nav a:nth-of-type(n+1):hover {
     background-color: #f38630;
     color: #3f3f3f;
+    height: 100px;
 }
 
 .parallax-window {
-    min-height: 400px;
+    min-height: 600px;
     background: transparent;
 }
-
-.home {
-    width: 100%;
-    height: 400px;
-    margin-top: 100px;
-    top: 0px;
-    left: 0px;
-}
-/*original before parallax
-.home p {
-    font-family: 'PermanentMarker';
-    font-size: 5em;
-    color: white;
-    padding: 40px 0px 0px 40px;
-    display: inline-block;
-}*/
 
 .page1 h1 {
     padding: 110px 30px 10px 30px;
@@ -392,7 +411,6 @@ title appears*/
     vertical-align: top;
     margin: 90px 0px;
 }
-/*Begin Portfolio Page*/
 
 .page2 {
     width: 100%;
@@ -419,14 +437,16 @@ title appears*/
     font-size: 2em;
     display: inline-block;
 }
+/*Begin Portfolio Page*/
 
 .portWrapper1 div {
     display: inline-block;
     width: 300px;
     height: 300px;
-    border-radius: 175px;
-    border: 10px solid #3f3f3f;
-    margin: 30px 50px;
+    /* border-radius: 175px; */
+    
+    border: 2px solid #3f3f3f;
+    margin: 30px 10px;
     text-align: center;
 }
 
@@ -453,15 +473,14 @@ title appears*/
 .portWrapper1 div:hover {
     background-image: none;
     background-color: #f38630;
-    Border: 10px solid #27c6b6;
+    Border: 2px solid #27c6b6;
     display: inline-block;
     width: 300px;
     height: 300px;
-    border-radius: 175px;
-    border: 10px solid #27c6b6;
-    margin: 30px 50px;
+    /* border-radius: 175px; */
+    
+    margin: 30px 10px;
     text-align: center;
-    cursor: pointer;
 }
 
 .portWrapper1 div:hover >p {
@@ -478,9 +497,10 @@ title appears*/
     display: inline-block;
     width: 300px;
     height: 300px;
-    border-radius: 175px;
-    border: 10px solid #3f3f3f;
-    margin: 30px 50px;
+    /*  border-radius: 175px; */
+    
+    border: 2px solid #3f3f3f;
+    margin: 30px 10px;
     text-align: center;
 }
 
@@ -507,15 +527,14 @@ title appears*/
 .portWrapper2 div:hover {
     background-image: none;
     background-color: #f38630;
-    Border: 10px solid #27c6b6;
+    Border: 2px solid #27c6b6;
     display: inline-block;
     width: 300px;
     height: 300px;
-    border-radius: 175px;
-    border: 10px solid #27c6b6;
-    margin: 30px 50px;
+    /*   border-radius: 175px; */
+    
+    margin: 30px 10px;
     text-align: center;
-    cursor: pointer;
 }
 
 .portWrapper2 div:hover >p {
@@ -688,32 +707,70 @@ footer div {
 }
 /* Responsive CSS */
 
-@media all and (max-width: 1250px) and (min-width: 300px) {
+@media all and (max-width: 1440px) and (min-width: 300px) {
     nav {
         width: 100%;
     }
-    @media all and (max-width: 500px) and (min-width: 300px) {
+    @media all and (max-width: 1050px) and (min-width: 300px) {
         h1 {
-            display: none;
-        }
-        .logo {
-            background-image: url(MPMLogo45px.png);
-            height: 50px;
-            width: 50px;
+            font-size: 40px;
         }
         nav a {
-            padding: 0px 2px;
-            font-size: 15px;
-            height: 50px;
-            width: 50px;
-            line-height: 50px;
+            font-size: 28px;
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
         }
-        nav {
-            height: 50px;
-            width: 100%;
+        @media all and (max-width: 750px) and (min-width: 300px) {
+            nav a {
+                margin: 0px 20px;
+                font-size: 24px;
+                height: 90px;
+                width: 90px;
+                line-height: 90px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .webDesign {
+                background-image: url("MPM%20Web%20Icon%20200.png");
+                background-repeat: no-repeat;
+            }
+            .socialMedia {
+                background-image: url("MPM%20SocialMed%20Icon%20200.png");
+                background-repeat: no-repeat;
+            }
+            .content {
+                background-image: url("MPM%20Content%20Icon%20200.png");
+                background-repeat: no-repeat;
+            }
         }
-        .page1,
-        .page2,
-        .page3 {
-            width: 100%;
-        }
+        @media all and (max-width: 600px) and (min-width: 300px) {
+            h1 {
+                display: none;
+            }
+            .logo {
+                background-image: url(MPMLogo45px.png);
+                height: 50px;
+                width: 50px;
+            }
+            nav a {
+                padding: 0px 2px;
+                font-size: 15px;
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+            }
+            nav {
+                height: 50px;
+                width: 100%;
+            }
+            .parallax-window {
+                display: none;
+            }
+            .page1,
+            .page2,
+            .page3 {
+                width: 100%;
+                background-color: white;
+            }
