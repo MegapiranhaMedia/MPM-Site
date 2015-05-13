@@ -189,13 +189,6 @@ nav a:last-of-type {
     order: 3;
     margin: auto;
 }
-
-nav a {
-    color: white;
-    font-size: 2em;
-    text-decoration: none;
-    font-family: 'TrashHand';
-}
 /* Original nav
 
 nav {
@@ -275,7 +268,7 @@ nav a:nth-of-type(n+1):hover {
     width: 300px;
     height: 300px;
     display: inline-block;
-    margin: 0px 40px;
+    margin: 0px 20px;
 }
 /*Text under each service* alternate version/
 /*
@@ -424,7 +417,7 @@ title appears*/
 
 .page3 {
     width: 100%;
-    height: 900px;
+    height: 600px;
     background-color: #3f3f3f;
     top: 0px;
     left: 0px;
@@ -676,6 +669,11 @@ title appears*/
 }
 */
 
+.form {
+    height: 400px;
+    width: 100%;
+}
+
 footer {
     width: 100%;
     height: 100px;
@@ -721,56 +719,259 @@ footer div {
             width: 100px;
             line-height: 100px;
         }
-        @media all and (max-width: 750px) and (min-width: 300px) {
-            nav a {
-                margin: 0px 20px;
-                font-size: 24px;
-                height: 90px;
-                width: 90px;
-                line-height: 90px;
-            }
-            h1 {
-                font-size: 28px;
-            }
-            .webDesign {
-                background-image: url("MPM%20Web%20Icon%20200.png");
-                background-repeat: no-repeat;
-            }
-            .socialMedia {
-                background-image: url("MPM%20SocialMed%20Icon%20200.png");
-                background-repeat: no-repeat;
-            }
-            .content {
-                background-image: url("MPM%20Content%20Icon%20200.png");
-                background-repeat: no-repeat;
-            }
+    }
+    @media all and (max-width: 1000px) and (min-width: 300px) {
+        .servWrapper div {
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: 15px 20px;
         }
-        @media all and (max-width: 600px) and (min-width: 300px) {
-            h1 {
-                display: none;
-            }
-            .logo {
-                background-image: url(MPMLogo45px.png);
-                height: 50px;
-                width: 50px;
-            }
-            nav a {
-                padding: 0px 2px;
-                font-size: 15px;
-                height: 50px;
-                width: 50px;
-                line-height: 50px;
-            }
-            nav {
-                height: 50px;
-                width: 100%;
-            }
-            .parallax-window {
-                display: none;
-            }
-            .page1,
-            .page2,
-            .page3 {
-                width: 100%;
-                background-color: white;
-            }
+        .page1 {
+            height: auto;
+        }
+    }
+    @media all and (max-width: 750px) and (min-width: 300px) {
+        nav a {
+            font-size: 28px;
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        .page1 {
+            height: auto;
+        }
+        .servWrapper div {
+            height: 200px;
+            width: 200px;
+            margin: 10px 0px;
+        }
+        .servWrapper div:hover {
+            height: 200px;
+            width: 200px;
+            margin: 10px 0px;
+            border: none;
+        }
+        .servWrapper div:hover >p {
+            visibility: hidden;
+        }
+        .webDesign {
+            background-image: url("MPM%20Web%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+        }
+        .webDesign:hover {
+            background-image: url("MPM%20Web%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+        }
+        .socialMedia {
+            background-image: url("MPM%20SocialMed%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin: 10px 0px;
+            height: 200px;
+            width: 200px;
+        }
+        .socialMedia:hover {
+            background-image: url("MPM%20SocialMed%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin: 10px 0px;
+            height: 200px;
+            width: 200px;
+        }
+        .content {
+            background-image: url("MPM%20Content%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin: 10px 0px;
+            height: 200px;
+            width: 200px;
+        }
+        .content:hover {
+            background-image: url("MPM%20Content%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin: 10px 0px;
+            height: 200px;
+            width: 200px;
+        }
+        .webText {
+            display: none;
+        }
+        .socialText {
+            display: none;
+        }
+        .contentText {
+            display: none;
+        }
+        .servWrapper div:first-of-type {
+            display: block;
+            margin: 0px 0px 0px 10px;
+        }
+        .servWrapper div:nth-of-type(2) {
+            display: block;
+            margin: 10px 20px 0px 10px;
+        }
+        .servWrapper div:last-of-type {
+            display: block;
+            margin: 10px 20px 0px 10px;
+        }
+        footer {
+            height: 20px;
+        }
+        .page2 {
+            height: auto;
+        }
+        .page3 {
+            height: 100px;
+        }
+    }
+    @media all and (max-width: 600px) and (min-width: 300px) {
+        h1 {
+            display: none;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        .logo {
+            background-image: url(MPMLogo45px.png);
+            height: 100px;
+            width: 100px;
+        }
+        nav {
+            height: 100px;
+            width: 100%;
+            position: fixed;
+        }
+        nav a {
+            padding: 0px 2px;
+            font-size: 15px;
+            height: 100px;
+            width: 75px;
+            line-height: 100px;
+        }
+        nav a:hover {
+            padding: 0px 2px;
+            font-size: 15px;
+            height: 100px;
+            width: 75px;
+            line-height: 100px;
+        }
+        .parallax-window {
+            display: none;
+        }
+        .page1,
+        .page2,
+        .page3 {
+            width: 100%;
+        }
+        .page1 {
+            height: 750px;
+        }
+        .servWrapper {
+            padding-top: 110px;
+        }
+        .servWrapper div {
+            height: 200px;
+            width: 200px;
+            margin: 10px 0px;
+        }
+        .servWrapper div:hover {
+            height: 200px;
+            width: 200px;
+            margin: 10px 0px;
+            border: none;
+        }
+        .servWrapper div:hover >p {
+            visibility: hidden;
+        }
+        .webDesign {
+            background-image: url("MPM%20Web%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+        }
+        .webDesign:hover {
+            background-image: url("MPM%20Web%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+        }
+        .socialMedia {
+            background-image: url("MPM%20SocialMed%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin: 10px 0px;
+            height: 200px;
+            width: 200px;
+        }
+        .socialMedia:hover {
+            background-image: url("MPM%20SocialMed%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin: 10px 0px;
+            height: 200px;
+            width: 200px;
+        }
+        .content {
+            background-image: url("MPM%20Content%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin: 10px 0px;
+            height: 200px;
+            width: 200px;
+        }
+        .content:hover {
+            background-image: url("MPM%20Content%20Icon%20200.png");
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin: 10px 0px;
+            height: 200px;
+            width: 200px;
+        }
+        .webText {
+            display: none;
+        }
+        .socialText {
+            display: none;
+        }
+        .contentText {
+            display: none;
+        }
+        .servWrapper div:first-of-type {
+            display: block;
+            margin: 0px 0px 0px 10px;
+        }
+        .servWrapper div:nth-of-type(2) {
+            display: block;
+            margin: 10px 20px 0px 10px;
+        }
+        .servWrapper div:last-of-type {
+            display: block;
+            margin: 10px 20px 0px 10px;
+        }
+    }
+    footer {
+        height: 20px;
+    }
+    .page2 {
+        height: auto;
+    }
+    .page3 {
+        height: 200px;
+    }
+}
